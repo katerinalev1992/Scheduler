@@ -1,0 +1,12 @@
+<div class="item-block" (mouseover)="hover()" (mouseout)="unhover()">
+  <div class="date-block">{{getFormatDate('-')}}</div>
+  <div class="item-block-content" id="style-4">
+    <div *ngFor="let item of dayEvts" class="hour-block">
+      {{item.time}}: {{item.description}}
+    </div>
+  </div>
+
+  <div [ngStyle]="{'display': getHoverStyle()}" class="item-block-footer">
+    <button (click)="addItem()">+</button>
+  </div>
+</div>

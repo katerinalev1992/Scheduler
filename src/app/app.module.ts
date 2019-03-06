@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {ItemBlockComponent} from "../components/item-block/item-block.component";
+import {DayBlockComponent} from "../components/day-block/day-block.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemBlockComponent,
+    DayBlockComponent
   ],
   imports: [
     BrowserModule,

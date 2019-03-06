@@ -1,0 +1,4 @@
+.gridItem{
+  display: grid;
+  grid-template-columns: repeat(7, 14%);
+}
