@@ -1,5 +1,5 @@
 <div class="item-block" (mouseover)="hover()" (mouseout)="unhover()">
-  <div>{{getFormatDate('-')}}</div>
+  <div class="item-block-date">{{getFormatDate('-')}}</div>
   <div class="item-block-content" id="style-4">
     <div *ngFor="let item of dayEvts">
       {{item.time}}: {{item.description}}

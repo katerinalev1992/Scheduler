@@ -1,5 +1,5 @@
 .item-block{
-  background-color: #dbf1f0;
+  background-color: #ffffff;
   height: 100px;
   padding: 10px;
   margin: 0.1rem;
@@ -43,4 +43,10 @@
 {
   background-color: #80b4ce;
   border: 1px solid #555555;
+}
+
+.item-block-date{
+  font-size: 8px;
+  padding-bottom: 5px;
+  font-weight: bold;
 }

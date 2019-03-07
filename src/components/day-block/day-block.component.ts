@@ -58,4 +58,8 @@ export class DayBlockComponent implements OnInit {
       return this.date
     }
   }
+
+  changeHourValue(item){
+    console.log(item)
+  }
 }

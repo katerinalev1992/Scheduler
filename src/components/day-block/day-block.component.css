@@ -1,6 +1,6 @@
 .item-block{
   background-color: #dbf1f0;
-  height: 100px;
+  height: 150px;
   padding: 10px;
   margin: 0.1rem;
   border: 1px solid #e0e0e0;
@@ -11,7 +11,7 @@
 }
 
 .item-block-content{
-  height: 75px;
+  height: 110px;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
