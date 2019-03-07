@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import DayPlan from "../../model/DayPlan";
 import PlanItem from "../../model/PlanItem";
+import {MatDialog, MatDialogConfig} from "@angular/material";
+import {AddEventComponent} from "../add-event/add-event.component";
 
 @Component({
   selector: 'app-item-block',
@@ -13,7 +15,7 @@ export class ItemBlockComponent implements OnInit {
   @Input() dayEvts: any;
   hovered: boolean = false;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -32,7 +34,12 @@ export class ItemBlockComponent implements OnInit {
   }
 
   addItem() {
-    this.dayEvts.push(new PlanItem('13:00', 'test'));
+    // this.dayEvts.push(new PlanItem('13:00', 'test'));
+    this.dialog.open(AddEventComponent, <MatDialogConfig>{
+      width: '900px',
+      data: {},
+      disableClose: true
+    });
   }
 
   getFormatDate(style: string) {

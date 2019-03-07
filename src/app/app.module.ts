@@ -5,17 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ItemBlockComponent} from "../components/item-block/item-block.component";
 import {DayBlockComponent} from "../components/day-block/day-block.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MaterialModule} from "./material.module";
+import {MatDialogModule} from "@angular/material";
+import {AddEventComponent} from "../components/add-event/add-event.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemBlockComponent,
-    DayBlockComponent
+    DayBlockComponent,
+    AddEventComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    MatDialogModule
   ],
+  entryComponents: [AddEventComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
